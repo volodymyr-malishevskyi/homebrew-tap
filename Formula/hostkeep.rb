@@ -1,25 +1,25 @@
 class Hostkeep < Formula
   desc "Terminal UI editor for /etc/hosts: toggle, group and edit entries safely, with backups and diff preview"
   homepage "https://github.com/volodymyr-malishevskyi/hostkeep"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.1.0/hostkeep-aarch64-apple-darwin.tar.xz"
-      sha256 "b542f978556b0e0b32423e99d613ea59bfb8ece4720352c115b2542c3b3bc90b"
+      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.2.0/hostkeep-aarch64-apple-darwin.tar.xz"
+      sha256 "140b93228582706a6d24024d271502c79234222c3560ffc0339ba8e0c7bd98d8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.1.0/hostkeep-x86_64-apple-darwin.tar.xz"
-      sha256 "d30df3d5a1bfa1092b0fd8baca579623e951e856dd06ef8bcf398e51ed4826f4"
+      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.2.0/hostkeep-x86_64-apple-darwin.tar.xz"
+      sha256 "e465719da090d132cbbbbe78c761cd2659f7f3411fec145de204e23a76a5adda"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.1.0/hostkeep-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "196d74d5ae5386fdd3a9e34dccb5df73817e17645b9797e4715f649a220e986c"
+      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.2.0/hostkeep-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "276024dc33773410c6570e86b23bc3ca083f5e69f812dcd764c526468deb6aca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.1.0/hostkeep-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "054a2c6923a0e1d1b5bff1ab5cc993c2fe04e6def348a5cf7da526d4f8125aed"
+      url "https://github.com/volodymyr-malishevskyi/hostkeep/releases/download/v0.2.0/hostkeep-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b8a57420ef8b09798ab28d0d62e052ef341c51243b794abcd139cd11af1bdc9f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
